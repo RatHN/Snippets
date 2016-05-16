@@ -1,0 +1,14 @@
+builder.setMessage("La aplicacion no puede continuar sin permisos de leer Y " +
+                            "escribir en memoria").setPositiveButton("Intentar Nuevamente",
+                            clikeado)
+                            .setTitle("ERROR")
+                            .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    finish();
+                                }
+                            });
+
+                    // 3. Get the AlertDialog from create()
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
