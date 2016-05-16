@@ -1,0 +1,4 @@
+Intent intento = new Intent(this, ActividadCalculador.class);
+        intento.putExtra("CurPas", "Cursar");
+        onStop();
+        startActivity(intento);
